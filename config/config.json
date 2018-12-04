@@ -1,0 +1,10 @@
+{
+  "cimi_api_url": "http://cimi:8201/api",
+  "port": 8000,
+  "channels": [
+    {
+      "job": "demo.py",
+      "frequency": 5
+    }
+  ]
+}
