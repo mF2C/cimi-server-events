@@ -54,7 +54,7 @@ at least a function named `run`.
 
 `docker run -d -p <desiredHostPort>:<portNumberInConfig> <dockerImageName>`
 
-Once this is running, the event server can be accessed at _http://localhost:<desiredHostPort>/<channel>
+Once this is running, the event server can be accessed at `http://localhost:<desiredHostPort>/<channel>`
 
 ### Use custom config and jobs
 
