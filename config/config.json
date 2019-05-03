@@ -5,6 +5,14 @@
     {
       "job": "demo.py",
       "frequency": 5
+    },
+    {
+      "job": "service_operation_reports_create.py",
+      "frequency": 5
+    },
+    {
+      "job": "service_operation_reports_update.py",
+      "frequency": 1
     }
   ]
 }
