@@ -1,4 +1,4 @@
-FROM python:3.7-alpine
+FROM python:3.5-alpine3.8
 
 # Install redis, like in the official Dockerfile
 # https://github.com/docker-library/redis/blob/f1a8498333ae3ab340b5b39fbac1d7e1dc0d628c/5.0/alpine/Dockerfile
