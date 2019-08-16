@@ -68,7 +68,7 @@ def execute_job(channel):
         JOB_LAST_STATE[channel]["last_timestamp"] = updated_timestamp
 
         for msg in events:
-            sse.publish({"message": json.dumps(msg)}, channel=channel, type='event')
+            sse.publish(msg, channel=channel, type='event')
 
         if events:
             return "New events found at %s" % updated_timestamp
@@ -76,5 +76,5 @@ def execute_job(channel):
             return "No new events..."
     else:
         msg = "ERROR: this channel doesn't exist"
-        sse.publish({"message": msg}, channel=channel, type='error')
+        sse.publish(msg, channel=channel, type='error')
         return msg
